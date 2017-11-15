@@ -26,76 +26,99 @@
     
     <!-- link to jquery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- link to google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
 </head>
 
 
-<body style="background-image:url('assets/images/wild_flowers.png')" >
+<body style="background-image:url('assets/images/intersection.png')" >
 
 <div class="container">
+	<div class="row"><br><br><br></div>
   <div class="jumbotron">
-    <h1>Crystal Collector</h1>
-    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
-    responsive, mobile-first projects on the web.</p>
+    <h1>Crystal Collector</h1><br>
+    <p>Collect the correct number of crystals and you win!</p>
   </div>
-  <p>This is some text.</p>
+  
+  
   <p>This is another text.</p>
 </div>
 
 
  <div class="row">
- 	<div class="col-sm-6 col-md-2">
+ 	<div class="hidden-sm col-md-2">
     </div>
   <div class="col-sm-6 col-md-2">
     <div class="thumbnail">
-      <img src="assets/images/violet.jpg" alt="amythest" style="height:130px">
+      <img src="assets/images/clearonwhite.jpg" alt="amythest">
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <p style="text-align:center"><a id="gypsum" class="btn btn-primary" role="button">Gypsum</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-6 col-md-2">
     <div class="thumbnail">
-      <img src="assets/images/rose.jpg" alt="pink crystal">
+      <img src="assets/images/pinkonwhite.jpg" alt="pink crystal">
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <p style="text-align:center"> <a id="roseQuartz" class="btn btn-primary" role="button">Rose Quartz</a></p>
       </div>
     </div>
   </div>
 <div class="col-sm-6 col-md-2">
     <div class="thumbnail">
-      <img src="assets/images/clear2.jpg" alt="amythest">
+    <img src="assets/images/blue.jpg" alt="Lazurite" id="blueCrystal">
+      
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <p style="text-align:center"> <a id="lazurite" class="btn btn-primary" role="button">Lazurite</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-6 col-md-2">
     <div class="thumbnail">
-      <img src="assets/images/amethyst.jpg" alt="pink crystal" style="height:130px">
+      <img src="assets/images/amethystonwhite.jpg" alt="amethyst" >
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <p style="text-align:center"><a id="amethyst" class="btn btn-primary" role="button">Amethyst</a> </p>
       </div>
     </div>
   </div>
 
+</div>
+<div class="row">
+	<div class="hidden-sm col-md-4"></div>
+	<div class="col-md-4">
+		<div class="panel panel-default">
+  <div class="panel-body howTo" >
+<p>Some crystals are more plentiful than others! For each specific type of crystal you click, you will collect a specific number of those crystals. Try to collect exactly the number shown, using a combination of the different crystals. Otherwise, you lose! Remember, the different crystals are found in different amounts each game.
+</p>
+</div>
+</div>
+</div>
+<div class="hidden-sm col-md-4"></div>
 
-
-
-
-
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="row gameInfo">
+<p class="info bg-default">This one will be hidden and say you win or lose.</p>
+<p class="info bg-success">Number of crystals to collect: </p>
+<p class="info bg-info">This is where your score will be!</p>
+<div>
+<p class="info bg-warning">Wins: </p>
+<p class="info bg-danger">Losses: </p>
+</div>
 </div>
 
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<div class="panel panel-default">
+  <div class="panel-body text-right">@Andreya Valabek 2017</div>
+</div>
 
 </body>
 </html>

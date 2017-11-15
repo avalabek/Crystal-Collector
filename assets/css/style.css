@@ -1,0 +1,37 @@
+.jumbotron {
+background-color:#d6cbef;
+color:#5c5b5e;
+/*#d0c0d3;*/
+/*#bf9dc6*/
+}
+#blueCrystal {
+	
+	height: 175px;
+	
+	padding-bottom:5px;
+}
+body {
+	font-family:Comfortaa;
+}
+
+	
+
+.info {
+	padding:20px;
+	font-size:20px;
+	text-align:center;
+	margin-right:225px;
+	margin-left:225px;
+
+}
+#howTo {
+	
+}
+.howTo {
+	font-size:16px;
+	/*background-color:#c9bdc1;*/
+background-color:#dee0e2;
+}
+/*.btn {
+	background-color:#d6cbef;
+}*/
