@@ -1,31 +1,22 @@
 $(document).ready(function(){
+
 //variable to hold target--this will be random 19-120
 var wins = 0;
 var losses = 0;
 
 var targetNumber = "";
-var random = Math.floor(Math.random() * 120) + 19;
-var crystalRandom = Math.floor(Math.random()*12) + 1;
-
-var crystalButton = $(".btn");
-
-targetNumber = random
-
 //to change span numberToCollect to show target number
 $("#numberToCollect").text( targetNumber);
 
+var random = Math.floor(Math.random() * 120) + 19;
+var crystalRandom = Math.floor(Math.random()*12) + 1;
+var crystalButton = $(".btn");
+
+
+
 var counter = 0;
-//put the whole thing in a startGame variable so that it can 
-// be called to restart
-
-var startGame;
-var restartGame;
-//restart game should hold number of wins/losses from befor
-
-startGame = $(".btn").each(function(){
-
-$(this).on("click", function() {
-	counter += crystalRandom;
+$(".btn").on("click", function() {
+	counter += 10;
 $("#score").text(counter);
 	console.log("Your new score is: " + counter );
 
@@ -34,18 +25,17 @@ $("#score").text(counter);
 		$("#winOrLose").text("You win!").css("color","red");
 		++wins;
 		$("#wins").text(wins);
-		
+		console.log(wins);
 	} 
 	else if (counter >= targetNumber){
-		$("#winOrLose").text("You lose!Click here to play again.").css("color","blue");
+		$("#winOrLose").text("You lose!").css("color","blue");
 		++losses;
 		$("#losses").text(losses);
-		$("#winOrLose").on('click', function(){
-			alert('Does this work?Need to make a function.');
-			//here i am trying to call 
-			return restartGame;
-		})
+		console.log(losses);
 	}
+
+
+
 crystalButton.attr("value", crystalRandom);
 
 var crystalValue = ($(this).attr("value"));
@@ -53,13 +43,16 @@ crystalValue = parseInt(crystalValue);
 
 counter+= crystalValue;
 
+targetNumber = random
 
 
 
-})
+
+
+
+
+
 });
-
-restartGame = startGame
 })
 // // This time we increase the counter by *10* each time the user clicks.
 //     counter += 10;

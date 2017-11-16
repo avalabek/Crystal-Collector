@@ -24,16 +24,8 @@
 	<!-- link to javascript -->
     <script type="text/javascript" src="assets/javascript/scripts.js"></script>
     
-    <!-- link to jquery 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>-->
-
-<script
-			  src="https://code.jquery.com/jquery-2.2.4.min.js"
-			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-			  crossorigin="anonymous"></script>
-
-
-
+    <!-- link to jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
 
 	<!-- link to google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
@@ -69,7 +61,7 @@
   </div>
   <div class="col-sm-6 col-md-2">
     <div class="thumbnail">
-      <img src="assets/images/pinkonwhite.jpg" alt="pink crystal">
+      <img src="assets/images/pinkonwhite.jpg" alt="pink crystal" >
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
@@ -105,21 +97,21 @@
 	<div class="col-md-4">
 		<div class="panel panel-default">
   <div class="panel-body howTo" >
-<p>Some crystals are more plentiful than others! For each specific type of crystal you click, you will collect a specific number of those crystals. Try to collect exactly the number shown, using a combination of the different crystals. Otherwise, you lose! Remember, the different crystals are found in different amounts each game.
+<p>For each type of crystal you click, you will collect a specific number of those crystals. Try to collect exactly the number shown, using a combination of the different crystals. Otherwise, you lose! Remember, the different crystals are found in different amounts each game.
 </p>
 </div>
 </div>
 </div>
 <div class="hidden-sm col-md-4"></div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="row gameInfo">
-<p class="info bg-default">This one will be hidden and say you win or lose.</p>
-<p class="info bg-success">Number of crystals to collect: </p>
-<p class="info bg-info">This is where your score will be!</p>
+<p class="info bg-default"><span id="winOrLose"></span></p>
+<p class="info bg-success">Number of crystals to collect: <span id="numberToCollect"></span></p>
+<p class="info bg-info">Number of crystals collected: <span id="score"></span></p>
 <div>
-<p class="info bg-warning">Wins: </p>
-<p class="info bg-danger">Losses: </p>
+<p class="info bg-warning">Wins: <span id="wins"></span></p>
+<p class="info bg-danger">Losses: <span id="losses"></span></p>
 </div>
 </div>
 
