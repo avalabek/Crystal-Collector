@@ -1,11 +1,12 @@
 $(document).ready(function(){
 
-//variable to hold target--this will be random 19-120
+//variable to hold wins and losses
 var wins = 0;
 var losses = 0;
-
+//variable to hold target--random 19-120
 var targetNumber = "";
-//to change span numberToCollect to show target number
+//to change span numberToCollect to show target number on page
+//this is line 22 in other version
 $("#numberToCollect").text( targetNumber);
 
 var random = Math.floor(Math.random() * 120) + 19;
@@ -35,7 +36,7 @@ $("#score").text(counter);
 	}
 
 
-
+//when this is moved to the bottom, it works, but the target number doesn't
 crystalButton.attr("value", crystalRandom);
 
 var crystalValue = ($(this).attr("value"));

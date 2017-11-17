@@ -1,68 +1,74 @@
-$(document).ready(function(){
-//variable to hold target--this will be random 19-120
-var wins = 0;
-var losses = 0;
+$(document).ready(function() {
+    // VARIABLES
+    //variable to hold target--this will be random 19-120
+    var wins = 0;
+    var losses = 0;
+    var counter = 0;
+    var targetNumber = 0;
 
-var targetNumber = "";
-var random = Math.floor(Math.random() * 120) + 19;
-var crystalRandom = Math.floor(Math.random()*12) + 1;
+    // FUNCTIONS
+    var startGame;
+    var restartGame;
+    //restart game should hold number of wins/losses from befor
 
-var crystalButton = $(".btn");
+    startGame = function() {
+        var random = Math.floor(Math.random() * 120) + 19;
+        targetNumber = random;
+        //to change span numberToCollect to show target number
+        $("#numberToCollect").text(targetNumber);
 
-targetNumber = random
+        $(".btn").each(function() {
 
-//to change span numberToCollect to show target number
-$("#numberToCollect").text( targetNumber);
+            var crystalRandom = Math.floor(Math.random() * 12) + 1;
+            console.log("Crystal Random:", crystalRandom);
+            //something wrong: on first click gives random number, on subsequent clicks, it gives double random number
 
-var counter = 0;
-//put the whole thing in a startGame variable so that it can 
-// be called to restart
-
-var startGame;
-var restartGame;
-//restart game should hold number of wins/losses from befor
-
-startGame = $(".btn").each(function(){
-
-$(this).on("click", function() {
-	counter += crystalRandom;
-$("#score").text(counter);
-	console.log("Your new score is: " + counter );
-
-//change the alert below to replace the text in the span id winOrLose
-	if (counter === targetNumber){
-		$("#winOrLose").text("You win!").css("color","red");
-		++wins;
-		$("#wins").text(wins);
-		
-	} 
-	else if (counter >= targetNumber){
-		$("#winOrLose").text("You lose!Click here to play again.").css("color","blue");
-		++losses;
-		$("#losses").text(losses);
-		$("#winOrLose").on('click', function(){
-			alert('Does this work?Need to make a function.');
-			//here i am trying to call 
-			return restartGame;
-		})
-	}
-crystalButton.attr("value", crystalRandom);
-
-var crystalValue = ($(this).attr("value"));
-crystalValue = parseInt(crystalValue);
-
-counter+= crystalValue;
+            $(this).attr("crystal-value", crystalRandom);
+        });
+    }
 
 
+    // EVENT LISTENERS
+    $(".btn").on("click", function() {
+        // what happens when crystal is clicked
+        var crystalValue = $(this).attr("crystal-value");
+        crystalValue = parseInt(crystalValue);
 
+        // update counter
+        counter += crystalValue;
 
-})
+        // update counter on HTML
+        $("#score").text(counter);
+
+        // check win or loss
+        if (counter === targetNumber) {
+            $("#winOrLose").text("You win!").css("color", "blue");
+            ++wins;
+            $("#wins").text(wins);
+
+            $("#winOrLose").on('click', function() {
+                startGame();
+                // location.reload();
+            })
+
+        }
+        //it is making me lose before I reach the target number	
+        else if (counter > targetNumber) {
+            $("#winOrLose").text("You lose! Click here to play again.").css("color", "red");
+            ++losses;
+            $("#losses").text(losses);
+
+            $("#winOrLose").on('click', function() {
+                // alert('Does this work?Need to make a function.');
+                //here i am trying to call restart game what am i doing wrong; alert works fine
+                // Why doesn't "startGame();" work?"
+                // startGame();
+                //TODO: make game restart need to add things to function like restart the counter
+               location.reload();
+                //the above works, but deletes all wins. So reload is not the right way to do
+            })
+        }
+    });
+
+    startGame();
 });
-
-restartGame = startGame
-})
-// // This time we increase the counter by *10* each time the user clicks.
-//     counter += 10;
-
-//     // We then output the new counter value each time the crystal is clicked.
-//     alert("Your new score is: " + counter);
