@@ -1,125 +1,131 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    
     <title>Crystal Collector</title>
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
     <!-- CSS FIles -->
     <!--the reset.css must be above the style.css as loads in order but don't need it with bootstrap?-->
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    
     <!--bootstrap and javascript links-->
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
-	<!-- link to javascript -->
+    <!-- link to javascript -->
     <script type="text/javascript" src="assets/javascript/scripts.js"></script>
-    
     <!-- link to jquery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
-
-	<!-- link to google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <!-- link to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 
-
-<body style="background-image:url('assets/images/intersection.png')" >
-
-<div class="container">
-	<div class="row"><br><br><br></div>
-  <div class="jumbotron">
-    <h1>Crystal Collector</h1><br>
-    <p>Collect the correct number of crystals and you win!</p>
-  </div>
-
-  
-  <p>This is another text.</p>
-</div>
-
-
- <div class="row">
- 	<div class="hidden-sm col-md-2">
+<body style="background-image:url('assets/images/intersection.png')">
+    <div class="container">
+        <div class="row">
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="jumbotron">
+            <h1>Crystal Collector</h1>
+            <br>
+            <p>Collect the correct number of crystals and you win!</p>
+        </div>
     </div>
-  <div class="col-sm-6 col-md-2">
-    <div class="thumbnail">
-      <img src="assets/images/clearonwhite.jpg" alt="amythest">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p style="text-align:center"><a id="gypsum" class="btn btn-primary" role="button">Gypsum</a></p>
-      </div>
+    <div class="row">
+        <div class="hidden-sm col-md-2">
+        </div>
+        <div class="col-sm-4 col-md-2">
+            <div class="thumbnail">
+                <img src="assets/images/clearonwhite.jpg" alt="amythest">
+                <div class="caption">
+                    <p style="text-align:center"><a id="gypsum" class="btn btn-primary" role="button">Gypsum</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+                <img src="assets/images/pinkonwhite.jpg" alt="pink crystal">
+                <div class="caption">
+                    <p style="text-align:center"> <a id="roseQuartz" class="btn btn-primary" role="button">Rose Quartz</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+                <img src="assets/images/blue.jpg" alt="Lazurite">
+                <div class="caption">
+                    <p style="text-align:center"> <a id="lazurite" class="btn btn-primary" role="button">Lazurite</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+                <img src="assets/images/amethystonwhite.jpg" alt="amethyst">
+                <div class="caption">
+                    <p style="text-align:center"><a id="amethyst" class="btn btn-primary" role="button">Amethyst</a> </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <div class="thumbnail">
-      <img src="assets/images/pinkonwhite.jpg" alt="pink crystal" >
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p style="text-align:center"> <a id="roseQuartz" class="btn btn-primary" role="button">Rose Quartz</a></p>
-      </div>
-    </div>
-  </div>
-<div class="col-sm-6 col-md-2">
-    <div class="thumbnail">
-    <img src="assets/images/blue.jpg" alt="Lazurite">
-      
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p style="text-align:center"> <a id="lazurite" class="btn btn-primary" role="button">Lazurite</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-2">
-    <div class="thumbnail">
-      <img src="assets/images/amethystonwhite.jpg" alt="amethyst" >
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p style="text-align:center"><a id="amethyst" class="btn btn-primary" role="button">Amethyst</a> </p>
-      </div>
-    </div>
-  </div>
-
-</div>
-<div class="row">
-	<div class="hidden-sm col-md-4"></div>
-	<div class="col-md-4">
-		<div class="panel panel-default">
-  <div class="panel-body howTo" >
-<p>For each type of crystal you click, you will collect a specific number of those crystals. Try to collect exactly the number shown, using a combination of the different crystals. Otherwise, you lose! Remember, the different crystals are found in different amounts each game.
-</p>
-</div>
-</div>
-</div>
-<div class="hidden-sm col-md-4"></div>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="row gameInfo">
-<p class="info bg-default"><span id="winOrLose"></span></p>
-<p class="info bg-success">Number of crystals to collect: <span id="numberToCollect"></span></p>
-<p class="info bg-info">Number of crystals collected: <span id="score"></span></p>
-<div>
-<p class="info bg-warning">Wins: <span id="wins"></span></p>
-<p class="info bg-danger">Losses: <span id="losses"></span></p>
-</div>
-</div>
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br>
-<div class="panel panel-default">
-  <div class="panel-body text-right">@Andreya Valabek 2017</div>
-</div>
-
+    <div class="row">
+        <div class="hidden-sm col-md-4"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body howTo">
+                    <p>For each type of crystal you click, you will collect a specific number of those crystals. Try to collect exactly the number shown, using a combination of the different crystals. Otherwise, you lose! Remember, the different crystals are found in different amounts each game.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-sm col-md-4"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row gameInfo">
+            <p class="info bg-default"><span id="winOrLose"></span></p>
+            <p class="info bg-success">Number of crystals to collect: <span id="numberToCollect"></span></p>
+            <p class="info bg-info">Number of crystals collected: <span id="score"></span></p>
+            <div>
+                <p class="info bg-warning">Wins: <span id="wins"></span></p>
+                <p class="info bg-danger">Losses: <span id="losses"></span></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-body text-right">@2017 Andreya Valabek</div>
+        </div>
 </body>
+
 </html>
