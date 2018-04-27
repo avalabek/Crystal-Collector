@@ -30,8 +30,8 @@ $(document).ready(function() {
         losses = 0;
         counter = 0;
 
-
         $("#winOrLose").text("");
+
         startGame();
     }
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
 
             $("#winOrLose").on('click', function() {
                 $("#score").text("");
-                resetGame();
+                  resetGame();
                 //location.reload();
 
             })
