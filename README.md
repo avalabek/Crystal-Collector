@@ -12,10 +12,12 @@ Remember that:
 
 * if you go over, you lose!
 ```
-![Register](assets/images/blue.png "Crystal-Collector")
+![How many points is it worth?](assets/images/blue.jpg "Crystal-Collector")
 
 To play the game click the link! 
 
 [Crystal-Collector](https://avalabek.github.io/Crystal-Collector/).
+
+Made with Javascript, jQuery, Bootstrap, HTML, CSS and of course, Git.
 
 ### Good luck.
